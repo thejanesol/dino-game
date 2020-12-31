@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap');
+
+body {
+    background-color: #FAFAFA;
+    margin: 0;
+}
+
+@keyframes slideright {
+    from {
+        background-position: 70000%;
+    }
+
+    to {
+        background-position: 0;
+    }
+}
+
+.background {
+    position: absolute;
+    bottom: 0;
+    background-image: url("./img/background.png");
+    background-repeat: repeat-x;
+    animation: slideright 600s infinite linear;
+    width: 100%;
+    height: 35vh;
+}
+
+.dino, .cactus  {
+    width: 5vw;
+    height: 5vw;
+    position: absolute;
+    left: 2vw;
+    bottom: 0;
+    background-repeat: no-repeat;
+}
+
+.dino {
+    background-image: url("./img/dino.png");
+}
+
+.cactus {
+    background-image: url("./img/cactus.png");
+}
+
+.game-over {
+    margin-top: 30vh;
+    text-align: center;
+    font-family: "Hanalei Fill", sans-serif;
+    color: #666666;
+}
+
+.play-again:hover {
+    cursor: pointer;
+} 
